@@ -32,6 +32,31 @@ let myFunction = function() {
 }
 
 
-//*************************************** STACK and HEAP MEMORY *****************************************
+// +++++++++++++++++++++++++++++++++++ STACK and HEAP MEMORY +++++++++++++++++++++++++++++++++++++++++
+// Stack (contains Primitive datatypes), Heap (contains Non-Primitive datatypes)
 
-``
+// Stack memory gives copy of value
+
+// Heap value gives reference of original value
+
+let myYouTubename = "HiteshChaudharydotcom"
+
+let anothername = myYouTubename
+anothername = "chaiaurcode"
+
+// console.log(myYouTubename);
+// console.log(anothername);
+
+let userOne = {
+  email: "user@google.com",
+  upi: "user@ybl"
+}
+// console.log(userOne);
+
+let userTwo = userOne
+// console.log(userOne);
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne);
+console.log(userTwo);
