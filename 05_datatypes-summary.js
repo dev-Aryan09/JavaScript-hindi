@@ -30,3 +30,8 @@ let myObj = {
 let myFunction = function() {
     console.log("hello world");
 }
+
+
+//*************************************** STACK and HEAP MEMORY *****************************************
+
+``
