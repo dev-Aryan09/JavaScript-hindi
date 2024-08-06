@@ -39,4 +39,5 @@ const myn2 = myArray.splice(1,3)
 console.log(myn2);
 console.log("C", myArray);         // returns a section of an array, NOT a copy
 
-// NOTE :- The major difference between slice() and splice() is that slice returns a copy of an array and splice returns a section of an array.
+// NOTE :- 1. The major difference between slice() and splice() is that slice returns a copy of an array and splice returns a section of an array.
+//         2. Splice will change the original array.
