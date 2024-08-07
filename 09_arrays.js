@@ -42,6 +42,7 @@ const myn2 = myArray.splice(1, 3);
 // NOTE :- 1. The major difference between slice() and splice() is that slice returns a copy of an array and splice returns a section of an array.
 //         2. Splice will change the original array.
 
+
 // ----------------------------  more on arrays ------------------------------
 
 const marvelHeros = ["thor", "ironman", "spiderman"];
@@ -54,23 +55,29 @@ const dcHeros = ["superman", "flash", "batman"];
 // const allHeros = marvelHeros.concat(dcHeros)    // concat() returns new array without changing the existing arrays
 // console.log(allHeros);
 
-const allNewHeros = [...marvelHeros, ...dcHeros]; //
+const allNewHeros = [...marvelHeros, ...dcHeros];   
 // console.log(allNewHeros);
 
-const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, (7)[(4, 5)]]];
+const anotherArray = [1, 2, 3, [4, 5, 6], 7, [6, 7,[4, 5]]];
 
-const realAnotherArray = anotherArray.flat(Infinity);
-console.log(realAnotherArray);
+const realAnotherArray = anotherArray.flat(Infinity);    //Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+// console.log(realAnotherArray);
+
+// console.log(anotherArray);    // flat() dosen't change the original array
 
 
-console.log(Array.isArray("aryan"));   // check whether it is array or not
+// console.log(Array.isArray("aryan"));   // Array.isArray() check whether the passed value is array or not
 
-console.log(Array.from("aryan"));    // convert into array as individual items
+let arr = [1,2,"aryan"]
+// console.log(Array.isArray(arr));
 
-console.log(Array.from({name:"aryan"}));  // interesting
+
+// console.log(Array.from("aryan"));    // convert the passed value into array as individual items
+// console.log(Array.from({name:"aryan"}));  // interesting w.r.t object POV
 
 let score1 = 100
-let score2 = 200
-let score3 = 300
+let score2 = true
+let score3 = "three hundred"
 
-console.log(Array.of(score1, score2, score3));  
+console.log(Array.of(score1, score2, score3));  // The Array.of() static method creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments.
+console.log(Array.of());  // gives empty array
