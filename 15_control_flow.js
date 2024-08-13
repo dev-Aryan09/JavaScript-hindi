@@ -38,15 +38,35 @@ const balance = 1000;
 //   console.log("less than 900");
 // }
 
-const userLoggedIn = true;
-const debitCard = true;
-const loggedInFromGoogle = false;
-const loggedInFromEmail = true;
+// const userLoggedIn = true;
+// const debitCard = true;
+// const loggedInFromGoogle = false;
+// const loggedInFromEmail = true;
 
-if (userLoggedIn && debitCard) {                    // && --> logical and operator
-  console.log("Allow to buy course");
-}
+// if (userLoggedIn && debitCard) {                    // && --> logical and operator
+//   console.log("Allow to buy course");
+// }
 
-if (loggedInFromGoogle || loggedInFromEmail || guestUser) {        // || -> logical or operator
-  console.log("User logged in");
-}
+// if (loggedInFromGoogle || loggedInFromEmail || guestUser) {        // || -> logical or operator
+//   console.log("User logged in");
+// }
+
+
+// Nullish Coalescing Operator ( ?? ):- On the basis of null and undefined
+
+let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 10;
+// val1 = undefined ?? 10;
+val1 = null ?? 10 ?? 20 ?? 30
+
+// console.log(val1);
+
+
+// Ternary Operator
+
+// condition ? true : false
+
+const blackCoffeeprice = 80
+blackCoffeeprice <= 80 ? console.log("equal to 80") : console.log("greater than 80");
+
